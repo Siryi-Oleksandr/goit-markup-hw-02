@@ -1,0 +1,144 @@
+/* main-text-color: #212121 */
+/* secondary-text-color: #757575 */
+/* logo-colors: #000000
+                #2196F3 */
+/* accent-color: #2196F3 */
+/* white-color #FFFFFF */
+/* address-color: rgba(255, 255, 255, 0.6) */
+
+/* background-color-header: #FFFFFF */
+/* background-color-main: #F5F5F5 */
+/* background-color-our-team: #F5F4FA; */
+/* background-color-footer: #2F303A */
+/* background-color-hover: #2196F3 */
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --subtitle-text-color: #2f303a;
+  --accent-color: #2196f3;
+  --white-text-color: #ffffff;
+  /* CSS-змінні фонові кольори */
+  --primary-bg-color: #f5f5f5;
+  --secondary-bg-color: #f5f4fa;
+  --footer-bg-color: #2f303a;
+  --accent-bg-color: #2196f3;
+  --white-bg-color: #ffffff;
+}
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+}
+
+/* утиліта для скидання деяких налаштувань списків */
+ul {
+  list-style: none;
+}
+
+/* Верхня лінія сторінки Студія */
+.logo-web {
+  color: #2196f3;
+}
+.logo-studio {
+  color: #000000;
+}
+.header {
+  background-color: var(--white-bg-color);
+}
+.nav a {
+  color: var(--title-text-color);
+}
+.nav a:hover,
+.nav a:focus {
+  color: var(--accent-color);
+}
+
+.contacts a {
+  color: var(--primary-text-color);
+}
+.contacts a:hover,
+.contacts a:focus {
+  color: var(--accent-color);
+}
+
+/* Основний контент сторінки Студія */
+
+/* Герой */
+
+.hero {
+  background-color: #2f303a;
+}
+
+.hero-title {
+  color: var(--white-text-color);
+}
+
+.hero .button {
+  color: var(--white-text-color);
+  background-color: var(--accent-bg-color);
+}
+
+/* Основний контент Студія */
+
+.section-features {
+}
+
+.section-work {
+}
+
+.section-team {
+  background-color: var(--secondary-bg-color);
+}
+
+.section-title {
+  color: var(--title-text-color);
+}
+
+.section-features .section-subtitle {
+  color: var(--subtitle-text-color);
+}
+
+.section-team h3,
+.section-projects h3 {
+  color: var(--title-text-color);
+}
+
+/* Підвал сторінки */
+
+.footer {
+  background-color: var(--footer-bg-color);
+}
+
+.footer .logo-web {
+  color: #2196f3;
+}
+footer .logo-studio {
+  color: #ffffff;
+}
+
+.footer .address {
+  color: var(--white-text-color);
+}
+
+.footer .contacts {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer .contacts:hover,
+.footer .contacts:focus {
+  color: var(--accent-color);
+}
+
+/* Main content of a page Portfolio */
+
+.filters .button {
+  color: var(--title-text-color);
+  background-color: var(--secondary-bg-color);
+}
+
+.filters .button:hover,
+.filters .button:focus {
+  color: var(--white-text-color);
+  background-color: var(--accent-bg-color);
+}
