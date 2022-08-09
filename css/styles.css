@@ -15,7 +15,6 @@
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
-  --subtitle-text-color: #2f303a;
   --accent-color: #2196f3;
   --white-text-color: #ffffff;
   /* CSS-змінні фонові кольори */
@@ -29,22 +28,39 @@
 body {
   color: var(--primary-text-color);
   background-color: var(--primary-bg-color);
+  font-family: Roboto, Raleway, Montserrat, sans-serif;
 }
 
-/* утиліта для скидання деяких налаштувань списків */
+/* скидання деяких налаштувань списків та посилань */
 ul {
   list-style: none;
+}
+a {
+  text-decoration: none;
 }
 
 /* Верхня лінія сторінки Студія */
 .logo-web {
   color: #2196f3;
+  text-decoration: none;
+
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
 }
+
 .logo-studio {
   color: #000000;
 }
 .header {
   background-color: var(--white-bg-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .nav a {
   color: var(--title-text-color);
@@ -72,36 +88,83 @@ ul {
 
 .hero-title {
   color: var(--white-text-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .hero .button {
   color: var(--white-text-color);
   background-color: var(--accent-bg-color);
+  cursor: pointer;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
-/* Основний контент Студія */
+/* Основний контент Студія-Особливості */
 
 .section-features {
 }
 
-.section-work {
+.section-features .subtitle {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.section-features p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* "Чим ми займаємося" AND "Наша команда" */
+
+.section-work h2,
+.section-team h2 {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .section-team {
   background-color: var(--secondary-bg-color);
 }
 
-.section-title {
+.section-team h3 {
   color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
-.section-features .section-subtitle {
-  color: var(--subtitle-text-color);
-}
-
-.section-team h3,
-.section-projects h3 {
-  color: var(--title-text-color);
+.section-team p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 /* Підвал сторінки */
@@ -110,23 +173,31 @@ ul {
   background-color: var(--footer-bg-color);
 }
 
-.footer .logo-web {
-  color: #2196f3;
-}
 footer .logo-studio {
   color: #ffffff;
 }
 
 .footer .address {
   color: var(--white-text-color);
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
-.footer .contacts {
+.footer-address a {
   color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
-.footer .contacts:hover,
-.footer .contacts:focus {
+.footer-address a:hover,
+.footer-address a:focus {
   color: var(--accent-color);
 }
 
@@ -135,10 +206,16 @@ footer .logo-studio {
 .filters .button {
   color: var(--title-text-color);
   background-color: var(--secondary-bg-color);
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .filters .button:hover,
 .filters .button:focus {
   color: var(--white-text-color);
   background-color: var(--accent-bg-color);
+}
+
+.section-projects h2 {
+  color: var(--title-text-color);
 }
